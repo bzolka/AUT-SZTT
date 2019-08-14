@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="Initial.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Initial"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel Margin="24">
+            <TextBlock Text="Termék árszámítás"  Style="{StaticResource TitleTextBlockStyle}"/>
+            <TextBox x:Name="BasePrice" Header="Alapár" Text="2000" Margin="0,24,0,0" MaxLength="32" Width="400" HorizontalAlignment="Left"/>
+            <CheckBox x:Name="UseVat" Content="ÁFA" IsChecked="True" Margin="0,24,0,0"/>
+            <TextBox x:Name="Amount" Header="Mennyiség" Text="5" Margin="0,24,0,0" MaxLength="32" Width="400" HorizontalAlignment="Left"/>
+            <Line X1="0" X2="500" Y1="0" Y2="0"  Margin="0,30,0,0" Stroke="Green" StrokeThickness="1" />
+            <StackPanel Orientation="Horizontal">
+                <TextBox x:Name="Price" Header="Ár" Text="" IsReadOnly="True" Margin="0,20,0,0" MaxLength="32" Width="400" HorizontalAlignment="Left"/>
+                <Button x:Name="Calculate" Content="Számol" Margin="24,0,0,0" VerticalAlignment="Bottom" Click="Calculate_Click"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

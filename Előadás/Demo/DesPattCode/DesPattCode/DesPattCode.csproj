@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="_DesignPatternIntro\DataProcessor1.cs" />
+    <Compile Remove="_DesignPatternIntro\DataProcessor2.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="_DesignPatternIntro\DataProcessor1.cs" />
+    <None Include="_DesignPatternIntro\DataProcessor2.cs" />
+  </ItemGroup>
+
+</Project>
