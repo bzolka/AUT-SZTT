@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DesPattCode.Strategy
 {
-    class RarCompressionStrategy: ICompressionStrategy
+    public class RarCompressionStrategy: ICompressionStrategy
     {
         public void InitCompression()
         {

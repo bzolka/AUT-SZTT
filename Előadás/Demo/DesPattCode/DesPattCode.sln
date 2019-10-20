@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29020.237
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesPattCode", "DesPattCode\DesPattCode.csproj", "{D034EFBF-4273-4C39-AE91-7A2A6CE54CA1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesPattCode", "DesPattCode\DesPattCode.csproj", "{D034EFBF-4273-4C39-AE91-7A2A6CE54CA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrategyUnitTests", "StrategyUnitTests\StrategyUnitTests.csproj", "{602D0D2B-F392-40A2-B84F-0D38C4006B7F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{D034EFBF-4273-4C39-AE91-7A2A6CE54CA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D034EFBF-4273-4C39-AE91-7A2A6CE54CA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D034EFBF-4273-4C39-AE91-7A2A6CE54CA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{602D0D2B-F392-40A2-B84F-0D38C4006B7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{602D0D2B-F392-40A2-B84F-0D38C4006B7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{602D0D2B-F392-40A2-B84F-0D38C4006B7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{602D0D2B-F392-40A2-B84F-0D38C4006B7F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

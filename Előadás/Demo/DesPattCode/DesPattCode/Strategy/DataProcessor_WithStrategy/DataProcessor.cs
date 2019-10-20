@@ -5,7 +5,7 @@ using System.Threading;
 
 namespace DesPattCode.Strategy
 {
-    class DataProcessor
+    public class DataProcessor
     {
         ICompressionStrategy compressionStrategy; // Aktuális tömörítési stratégia/viselkedés
         ICancellationStrategy cancellationStrategy; // Aktuális cancel stratégia/viselkedés
@@ -49,7 +49,7 @@ namespace DesPattCode.Strategy
             // Szimulációként véletelen adatot generálunk
             Random random = new Random();
             // Véletlenszerűen detektáljuk az adatok vége állapotot
-            if (random.Next(3000) == 1)
+            if (random.Next(100) == 1)
                 return null;
             byte[] data = new byte[100];
             new Random().NextBytes(data);

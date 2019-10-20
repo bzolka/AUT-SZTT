@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DesPattCode.Strategy
 {
-    interface ICancellationStrategy
+    public interface ICancellationStrategy
     {
         bool IsCancelled();
     }

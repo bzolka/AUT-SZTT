@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DesPattCode.Strategy
 {
-    class KeyboardCancellationStrategy : ICancellationStrategy
+    public class KeyboardCancellationStrategy : ICancellationStrategy
     {
         ConsoleKey cancelKey;
 

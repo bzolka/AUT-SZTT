@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DesPattCode.Strategy
 {
-    interface ICompressionStrategy
+    public interface ICompressionStrategy
     {
         void InitCompression();
         byte[] CompressData(byte[] data);

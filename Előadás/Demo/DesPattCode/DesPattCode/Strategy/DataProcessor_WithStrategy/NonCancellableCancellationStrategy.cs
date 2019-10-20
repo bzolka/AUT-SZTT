@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DesPattCode.Strategy
 {
-    class NonCancellableCancellationStrategy : ICancellationStrategy
+    public class NonCancellableCancellationStrategy : ICancellationStrategy
     {
         public bool IsCancelled()
         {
