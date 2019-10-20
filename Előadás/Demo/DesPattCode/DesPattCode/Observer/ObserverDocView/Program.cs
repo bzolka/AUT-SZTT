@@ -5,7 +5,7 @@ namespace DesPattCode.ObserverDocView
     class Program
     {
 
-        static void Main2(string[] args)
+        static void Main(string[] args)
         {
             // Létrehozzuk a dokumentumot
             ExcelDocument doc = new ExcelDocument();
@@ -28,21 +28,22 @@ namespace DesPattCode.ObserverDocView
             // Azt várjuk, hogy minden beregisztált nézet újra kirajzolja magát, a már friss
             // adatokkal.
             doc.SetCellData(0, 0, 111);
-            Console.WriteLine("Cella adat megváltoztatva.");
+            Console.WriteLine("Cella adat megváltoztatva. Minden nézet a friss adatokat mutatja!");
 
-            Console.WriteLine("Nyomj meg egy billentyűt (222 -> 0,0) cella megváltoztatásához.");
+            Console.WriteLine("Nyomj meg egy billentyűt (222 -> 0,2) cella megváltoztatásához.");
             Console.ReadKey();
             // Megváltoztatjuk a dokumentum/subject állapotát.
             // Azt várjuk, hogy minden beregisztált nézet újra kirajzolja magát, a már friss
             // adatokkal.
             doc.SetCellData(0, 1, 222);
-            Console.WriteLine("Cella adat megváltoztatva.");
+            Console.WriteLine("Cella adat megváltoztatva. Minden nézet a friss adatokat mutatja!");
 
             Console.WriteLine("Nyomj meg egy billentyűt a TableView-n keresztüli változtatáshoz.");
             // Megváltoztatjuk a dokumentum/subject állapotát.
             // Azt várjuk, hogy minden beregisztált nézet újra kirajzolja magát, a már friss
             // adatokkal.
             tableView.SimulateUserChange();
+            Console.WriteLine("Cella adat megváltoztatva. Minden nézet a friss adatokat mutatja!");
             Console.ReadKey();
 
             // Kilépés előtt
