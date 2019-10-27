@@ -19,7 +19,7 @@ namespace DesPattCode.Delegate
             // elhagyhatjuk a {}-t és a return-t is (lambda expression megadása)
             var processor2 = new DataProcessor(() => isCancelled());
 
-            // Tulajdonkléppen elég a függvény nevét megadni:
+            // Tulajdonképpen elég a függvény nevét megadni (mivel nincs paramétere a lambdának):
             var processor3 = new DataProcessor(isCancelled);
 
             // Ha nem írunk külön függvényt az ellenőrzésre, beönthetjük ide az egész lambda 
