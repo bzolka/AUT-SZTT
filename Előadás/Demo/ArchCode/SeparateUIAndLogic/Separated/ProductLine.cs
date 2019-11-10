@@ -8,7 +8,7 @@ namespace Initial
 {
     class ProductLine
     {
-        static double minAmountForBatchDiscount = 10;
+        const double minAmountForBatchDiscount = 10;
 
         double basePrice;
         double amount;
@@ -26,8 +26,6 @@ namespace Initial
             double price = basePrice * amount;
             if (useVat)
                 price = price * 1.27;
-
-            double minAmountForBatchDiscount = 10;
 
             if (amount >= minAmountForBatchDiscount)
                 price = 0.9 * price;
