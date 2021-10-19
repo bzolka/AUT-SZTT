@@ -5,7 +5,7 @@ using System.Text;
 namespace DesPattCode.Delegate
 {
     // Csak zip algoritmust támogat.
-    // A megszakítás (cancel) kódja egy metódusrefencia/lambda formájában adható át, 
+    // A megszakítás (cancel) kódja egy metódusrefencia/lambda formájában adható át,
     // konstruktor paraméterként.
     // A tömörítő algoritmus tekintetében való kiterjeszhtetőség bármelyik technikával megoldható
     // (template method v. strategy v. metódusreferencia/lambda használata). Haladóknak
@@ -40,7 +40,7 @@ namespace DesPattCode.Delegate
             {
                 closeZip(); // T.f.h szükség van zip lezárására (pl. zip fájl lezárása)
             }
-       
+
         }
 
         // Beolvassa az adatok következő halmazát egy byte[]-be
@@ -56,7 +56,7 @@ namespace DesPattCode.Delegate
             new Random().NextBytes(data);
             return data;
         }
-        
+
         byte[] compressData(byte[] data)
         {
             Console.WriteLine("Compressing data via Zip ...");

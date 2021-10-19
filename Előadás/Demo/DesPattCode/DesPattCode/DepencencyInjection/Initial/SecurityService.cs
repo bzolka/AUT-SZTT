@@ -8,7 +8,7 @@ namespace DesPattCode.DepencencyInjection.Initial
     // mint például jelszó megváltoztatása, jelszó ellenőrzés beléptetéskor, stb.
     // A felhasználókat valamilyen adatbázisban tároljuk.
     // Arra figyeltünk, hogy a felhasználók adatainak lekérdezése, módosítása
-    // (perzisztencia) le van választva egy UserRepositry osztályba, 
+    // (perzisztencia) le van választva egy UserRepositry osztályba,
     // hiszen az egy másik felelősségi kör (SRP elv).
     // Probléma1: a ChangePassword-be a UserRepository implementáció be van égetve.
     // Rugalmatlan, csak adott adatbázis alapú felhasználó tárolással tud dolgozni.
@@ -17,16 +17,16 @@ namespace DesPattCode.DepencencyInjection.Initial
     // Probléma2: Az előző problémából adódóan a ChangePassword nem unit tesztelhető.
     // A ChangePassword tesztelésénén NEM akarjuk tesztelni az adatbázis alapú
     // perszisztenciát végző kódot, hanem csak a SecurityService-ben levő logikát.
-    // Ezen túl az adatbázis alapú perszitencia nagyban fejeslegesen lassítja a unit 
+    // Ezen túl az adatbázis alapú perszitencia nagyban fejeslegesen lassítja a unit
     // teszt futását.
-    // Továbbfejlesztés a megoldás irányába: alkalmazzuk a Strategy patternt, 
-    // vezessünk be egy IUserRepository  interfészt több lehetséges 
+    // Továbbfejlesztés a megoldás irányába: alkalmazzuk a Strategy patternt,
+    // vezessünk be egy IUserRepository  interfészt több lehetséges
     // implementációval (adatbázis alapú az éles működéshez, memória alapú a unit
     // teszteléshez), a SecurityService pedig interfészként hivatkozzon rá.
     // Lásd WithStrategy mappa...
     class SecurityService
     {
-        // A userId azonosítójú felhasználó jelszavát megváltoztatja 
+        // A userId azonosítójú felhasználó jelszavát megváltoztatja
         // newPassword-re (ha teljesíti a validációs szabályokat)
         // Visszatérési értékben jelzi, hogy sikerült-e a jelszó megfelel-e
         // a validálási szabályoknak.
@@ -68,7 +68,7 @@ namespace DesPattCode.DepencencyInjection.Initial
         {
             // UserRepository létrehozás
             var userRepository = new UserRepository();
-            // userRepository segítségével felhasználó adatok (username, password) 
+            // userRepository segítségével felhasználó adatok (username, password)
             // beolvasása adatbázisból és ellenőrzése
             throw new NotImplementedException();
         }

@@ -29,8 +29,8 @@ namespace DesPattCode.Proxy
         public void Load()
         {
             // Itt töltnénk be a pixeleket egy fájlból egy
-            // tagváltozóba.  
-            // Ezen felül a méretet is inicializáljuk a fájl 
+            // tagváltozóba.
+            // Ezen felül a méretet is inicializáljuk a fájl
             // alapján (de ennek nincs a minta szempontjábbl
             // semmi jelentősége)
             size = new Size(1000, 800);

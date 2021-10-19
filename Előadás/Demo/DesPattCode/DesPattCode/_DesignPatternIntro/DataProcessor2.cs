@@ -10,14 +10,14 @@ namespace DesPattCode.Intro
     // Konstruktorban átadjuk enum paraméterként, milyen tömörítő algoritmust
     // szeretnénk, ezt eltároljuk egy tagváltozóban(compressionAlg)
     // Ezen tagváltozó alapján választjuk ki később a tömörítő algoritmust.
-    // Problémák: 
+    // Problémák:
     // 1. A megoldás nem bővíthető könnyen új algoritmussal
     // A DataProcessor2 osztályba be van égetve, milyen algoritmusokat ismer.
     // Ha újat szeretnék bevezetni, a DataProcessor2 kódját módosítani kell.
     // Ezt követően pedig újra kell tesztelni az osztályt.
-    // Olyan bővíthetőségi megoldást keresünk, mely NEM igényli a DataProcessor2 
+    // Olyan bővíthetőségi megoldást keresünk, mely NEM igényli a DataProcessor2
     // módosítását új algoritmus bevezetésekor.
-    // A megoldás majd a STRATEGY tervezési minta alkalmazása lesz, 
+    // A megoldás majd a STRATEGY tervezési minta alkalmazása lesz,
     // később/rövidesen visszatérünk rá.
     class DataProcessor2
     {

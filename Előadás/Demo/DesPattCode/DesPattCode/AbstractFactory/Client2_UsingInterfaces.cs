@@ -10,14 +10,14 @@ namespace DesPattCode.AbstractFactory
     // A GUI elemekre már közös interfészként/ősként hivatkozik
     // (lásd tagváltozók).
     // Így ha más témára akarunk váltani, akkor ezeket a hivatkozásokat
-    // már nem kell átírni. 
-    // De még mindig van egy nagy probléma, az InitGUIElements 
+    // már nem kell átírni.
+    // De még mindig van egy nagy probléma, az InitGUIElements
     // függvénben a példányosítás még mindig közvetlenül a new operátorral
-    // történik, és a new után muszáj egy konkrét témához tartozó 
-    // implementációt megadni. Így, ha más témára akarunk áttérni, 
+    // történik, és a new után muszáj egy konkrét témához tartozó
+    // implementációt megadni. Így, ha más témára akarunk áttérni,
     // az InitGUIElements kódját még mindig módosítani kell és a kódot
     // újra kell fordítani.
-    // Megoldás: Abstract Factory minta használata, lásd 
+    // Megoldás: Abstract Factory minta használata, lásd
     // Client3_UsingAbstractFactory osztály.
     public class Client2_UsingInterfaces
     {

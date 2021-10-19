@@ -9,7 +9,7 @@ namespace DesPattCode.Command.App
     // és műveleteket biztosít ezek lekérdezéséhez, menedzseléséhez.
     class TextDocument
     {
-        // A fájl útvonala ahol a dokumentum tartalma 
+        // A fájl útvonala ahol a dokumentum tartalma
         // perzisztálásra kerül.
         string path;
 

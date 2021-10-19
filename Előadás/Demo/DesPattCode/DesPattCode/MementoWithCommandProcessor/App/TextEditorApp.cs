@@ -6,10 +6,10 @@ using DesPattCode.MementoWithCommandProcessor.Framework;
 namespace DesPattCode.MementoWithCommandProcessor.App
 {
     // Magát az alkalmazást (annak "gyökerét") reprezentáló osztály.
-    // Nyilvántartja a megnyitott dokumentumokat, tartalmaz egy 
+    // Nyilvántartja a megnyitott dokumentumokat, tartalmaz egy
     // CommandProcessor objektumot, stb.
     // Singleton, (lásd Singleton tervezési minta) elsődlegesen azért,
-    // hogy egyetlen példánya az alkalmazásban bárhonnan kényelmesen 
+    // hogy egyetlen példánya az alkalmazásban bárhonnan kényelmesen
     // elérhető legyen (pl. a parancs osztályokban is).
     class TextEditorApp
     {
@@ -64,7 +64,7 @@ namespace DesPattCode.MementoWithCommandProcessor.App
         }
 
         // Létrehoz egy új dokumentumot és meg is teszi aktívvá
-        // Megadhatunk egy kezdőszöveget: ez csak azt a célt szolgálja, 
+        // Megadhatunk egy kezdőszöveget: ez csak azt a célt szolgálja,
         // hogy egyszerűbben tudjuk demonstrálni egy konzol alkalmazással
         // a minta működését.
         public void NewDocument(string initalText = "")
@@ -79,7 +79,7 @@ namespace DesPattCode.MementoWithCommandProcessor.App
             var cmd = new ClearCommand();
             commandProcessor.ExecuteCommand(cmd);
         }
-        
+
         //public void OpenDocument()
         //{
         //    var doc = new TextDocument();

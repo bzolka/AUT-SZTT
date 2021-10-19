@@ -16,7 +16,7 @@ namespace DesPattCode.CommandProcessor.App
         // Az aktuális kijelölés hossza (ha 0, nincs szöveg kijelölve)
         int selectionLenght;
 
-        // Csak kezdeti inicializálásra. (Nem engedjük használni, ha a 
+        // Csak kezdeti inicializálásra. (Nem engedjük használni, ha a
         // a selectionStartIndex és a selectionLenght nem nulla)
         public TextDocument(string initalText = "")
         {
@@ -29,7 +29,7 @@ namespace DesPattCode.CommandProcessor.App
         // Az aktuálisan kijelölt szöveget lecsréli a paraméterben megadottra.
         public void SetSelectedText(string textForSelection)
         {
-            this.text = 
+            this.text =
                 text.Remove(selectionStartIndex,
                          Math.Min(selectionLenght, text.Length - selectionStartIndex))
                     .Insert(selectionStartIndex, textForSelection);
@@ -41,7 +41,7 @@ namespace DesPattCode.CommandProcessor.App
             return text.Substring(selectionStartIndex, selectionLenght);
         }
 
-        // Megadhatjuk, hogy mettől és milyen hosszan legyen kijelölve 
+        // Megadhatjuk, hogy mettől és milyen hosszan legyen kijelölve
         // a szöveg (egy "éles" alkalmazásban a felhasználó ez az egérrel
         // tudja megadni, egérkezeléssel mi nem foglalkozunk).
         public void SetSelection(int startIndex, int len)
@@ -64,8 +64,8 @@ namespace DesPattCode.CommandProcessor.App
             return (selectionStartIndex, selectionLenght);
         }
 
-  
-        
+
+
 
         public void Dump()
         {

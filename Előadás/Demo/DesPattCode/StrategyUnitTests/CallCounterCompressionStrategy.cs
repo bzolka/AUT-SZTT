@@ -29,6 +29,6 @@ namespace StrategyUnitTests
             return null;
         }
 
- 
+
     }
 }

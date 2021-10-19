@@ -6,7 +6,7 @@ namespace DesPattCode.Adapter
 {
     // Szerkeszthető szövegdoboz.
     // Egy olyan osztályt reprezentál, melynek egy gyakorlati
-    // esetben nem lenne meg a forráskódja, mert pl. be van 
+    // esetben nem lenne meg a forráskódja, mert pl. be van
     // építve a kereterendszerbe (pl. UWP TextBox). A gyakorlaban
     // ez egy nagyon komplex, sok ezer soros osztály lenne.
     // Ennek a kódját szerenénk felhasználni az alkalmazásunkban

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DesPattCode.ObserverDocView
 {
-    // A táblázat adatait tároló dokumentum (subject). 
+    // A táblázat adatait tároló dokumentum (subject).
     // A document ősből származik, onnan örököl bizonyos műveleteket.
     // Tagváltozókban tárolja az állapotot.
     class ExcelDocument: Document
@@ -13,7 +13,7 @@ namespace DesPattCode.ObserverDocView
         public const int ColCount = 5;
         double[,] data = new double[ColCount, RowCount];
 
-        // Lehetővé teszi a nézeteknek (observers) és mindenki másnak az adatok 
+        // Lehetővé teszi a nézeteknek (observers) és mindenki másnak az adatok
         // megváltoztatását.
         public void SetCellData(int col, int row, double value)
         {
@@ -21,9 +21,9 @@ namespace DesPattCode.ObserverDocView
             if (row >= RowCount) throw new ArgumentException("row >= " + RowCount);
             data[col, row] = value;
 
-            // Ez a kulcsa, könnyű kifelejteni. Ha kimarad, akkor az adat megváltozásáról nem kapnak 
+            // Ez a kulcsa, könnyű kifelejteni. Ha kimarad, akkor az adat megváltozásáról nem kapnak
             // a nézetek értesítést, nem frissítik magukat, vagyis a korábbi, változtatás előtti
-            // adatokat mutatják a változást követően is. 
+            // adatokat mutatják a változást követően is.
             // Érdemes egy próbát tenni a kikommentelésével
             UpdateAllViews();
         }

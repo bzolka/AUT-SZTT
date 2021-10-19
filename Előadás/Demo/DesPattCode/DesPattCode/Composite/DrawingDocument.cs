@@ -16,7 +16,7 @@ namespace DesPattCode.Composite
     // mert a Panel is implementálja az IGraphic interfészt.
     // 2. A DrawAll műveletben a kirajzoló kód nem különböztetni meg
     // az elemi és összetett objektumokat (nincsenek típus szerint
-    // leválogatva): mindre egységesen a Draw() műveletet hívja. 
+    // leválogatva): mindre egységesen a Draw() műveletet hívja.
     // A Draw az összetett Panel esetén az általa tartalmazott
     // alakzatokat rajzolja ki, pont ez volt a célunk!
     class DrawingDocument
@@ -31,8 +31,8 @@ namespace DesPattCode.Composite
 
         public void DrawAll()
         {
-            // Egységesen rajzoluk ki az elemi és összetett IGraphics 
-            // objektumokat, nincsenek típus szerint leválogatva, 
+            // Egységesen rajzoluk ki az elemi és összetett IGraphics
+            // objektumokat, nincsenek típus szerint leválogatva,
             // mindre Draw()-t hívunk.
             foreach (var g in graphics)
                 g.Draw();

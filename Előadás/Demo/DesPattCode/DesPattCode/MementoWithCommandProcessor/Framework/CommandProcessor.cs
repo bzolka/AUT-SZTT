@@ -5,16 +5,16 @@ using System.Text;
 
 namespace DesPattCode.MementoWithCommandProcessor.Framework
 {
-    // 1. Eltárolja a már futtatott command objektumokat, hogy ha később 
-    // a parancs visszavonására kerül sor, rendelkezésre álljon a 
+    // 1. Eltárolja a már futtatott command objektumokat, hogy ha később
+    // a parancs visszavonására kerül sor, rendelkezésre álljon a
     // command objektum
-    // 2. A parancsok futtatását és visszavonását rajta keresztül 
+    // 2. A parancsok futtatását és visszavonását rajta keresztül
     // végezzük(ExecuteCommand és UnExecuteLastCommand műveletek)
     class CommandProcessor
     {
         Stack<ICommand> commands = new Stack<ICommand>();
 
-        // Futtatja a paraméterként parancsot (Executee hívása) 
+        // Futtatja a paraméterként parancsot (Executee hívása)
         // majd eltárolja.
         public void ExecuteCommand(ICommand cmd)
         {

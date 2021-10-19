@@ -28,6 +28,6 @@ namespace DesPattCode.Singleton2
 
         // Az osztály egyik művelete
         public void DoSomething() { /*...*/}
-        
+
     }
 }

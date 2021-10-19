@@ -6,12 +6,12 @@ namespace DesPattCode.DepencencyInjection.WithStrategy
 {
     // Az eredeti (Initial) SecurityService továbbfejlesztése.
     // Interfészként hivatkozik a UserRepository implementációra:
-    // Ha más implementációt szeretnénk, akkor a műveleteket, pl. 
+    // Ha más implementációt szeretnénk, akkor a műveleteket, pl.
     // a ChangePassword-öt nem kell megváltoztatni:
-    // Még mindig maradt egy probléma, a konstruktorban a new-val 
+    // Még mindig maradt egy probléma, a konstruktorban a new-val
     // a példányosítás! A new után csak konkrét implementációt adhatunk meg.
     // így ha át szeretnénk térni egy másik implementációra, akkor a
-    // SecurityService kódját még mindig módosítani kell (igaz, már csak 
+    // SecurityService kódját még mindig módosítani kell (igaz, már csak
     // egy helyen, a konstruktorban), ez sérti az Open/Closed elvet
     // (meg kell nyitni az osztályt módosításra).
     // Megoldás: Dependency Injection (DI) alkalmazása, konstruktor, vagy esetleg
@@ -28,7 +28,7 @@ namespace DesPattCode.DepencencyInjection.WithStrategy
             userRepository = new DbUserRepository();
         }
 
-        // A userId azonosítójú felhasználó jelszavát megváltoztatja 
+        // A userId azonosítójú felhasználó jelszavát megváltoztatja
         // newPassword-re (ha teljesíti a validációs szabályokat)
         // Visszatérési értékben jelzi, hogy sikerült-e a jelszó megfelel-e
         // a validálási szabályoknak.
@@ -67,7 +67,7 @@ namespace DesPattCode.DepencencyInjection.WithStrategy
 
         public bool Login(string userName, string password)
         {
-            // userRepository tag segítségével felhasználó adatok (username, password) 
+            // userRepository tag segítségével felhasználó adatok (username, password)
             // beolvasása adatbázisból és ellenőrzése
             throw new NotImplementedException();
         }

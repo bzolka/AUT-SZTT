@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DesPattCode.ObserverDocView
 {
-    // Nincs megvalósítva, gyakorlásképpen érdemes bevezetni, 
+    // Nincs megvalósítva, gyakorlásképpen érdemes bevezetni,
     // természetesen valamilyen "szimulált" konzolos minimál megjelenítéssel
     // Nem a megjelenítés a lényeg, hanem azt érdemes látni, hogy új nézet
     // bevezethető a többi nézet és a dokumentum oszzályok módosítása nélkül,

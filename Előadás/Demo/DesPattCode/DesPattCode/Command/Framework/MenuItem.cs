@@ -12,7 +12,7 @@ namespace DesPattCode.Command.Framework
     {
         string text;
         ICommand command;
-        
+
         public MenuItem(string text, ICommand command)
         {
             this.text = text;

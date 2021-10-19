@@ -4,12 +4,12 @@ using System.Text;
 
 namespace DesPattCode.DepencencyInjection.WithStrategyAndDI
 {
-    // Végső megoldás. 
+    // Végső megoldás.
     // Interfészként hivatkozik a UserRepository implementációra,
     // és az implementációt is kívülről kapja meg (dependency injection),
     // jelen példában konstruktor paraméterként.
     // Minden korábbi problémától megszabadultunk, a kódot nézzük át, sehol
-    // nem szerepel benne egyik IUserRepository implementáció sem. 
+    // nem szerepel benne egyik IUserRepository implementáció sem.
     // Így bármelyik implementációval is akarjuk használni, a SecurityService
     // kódját nem kell módosítani. Az osztály használatára a DemoSecurityService
     // mutat példát.
@@ -30,7 +30,7 @@ namespace DesPattCode.DepencencyInjection.WithStrategyAndDI
             this.userRepository = userRepository;
         }
 
-    // A userId azonosítójú felhasználó jelszavát megváltoztatja 
+    // A userId azonosítójú felhasználó jelszavát megváltoztatja
     // newPassword-re (ha teljesíti a validációs szabályokat)
     // Visszatérési értékben jelzi, hogy sikerült-e a jelszó megfelel-e
     // a validálási szabályoknak.
@@ -69,7 +69,7 @@ namespace DesPattCode.DepencencyInjection.WithStrategyAndDI
 
         public bool Login(string userName, string password)
         {
-            // userRepository tag segítségével felhasználó adatok (username, password) 
+            // userRepository tag segítségével felhasználó adatok (username, password)
             // beolvasása adatbázisból és ellenőrzése
             throw new NotImplementedException();
         }

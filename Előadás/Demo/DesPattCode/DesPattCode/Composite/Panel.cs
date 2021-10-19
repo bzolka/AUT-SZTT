@@ -5,14 +5,14 @@ using System.Text;
 namespace DesPattCode.Composite
 {
     // Egy összetett (kompozit) alakzat, mely  grafikus
-    // alakzatokat tartalmaz és ezeket jeleníti meg. 
-    // Nem csak elemi alakzatokat tartalmazhat, hanem 
+    // alakzatokat tartalmaz és ezeket jeleníti meg.
+    // Nem csak elemi alakzatokat tartalmazhat, hanem
     // összetett Panel objektumokat is!
     class Panel : IGraphic
     {
         // Tartalmazott alakzatok listája
         List<IGraphic> graphics = new List<IGraphic>();
-        
+
         // A panel beágyazásának mélysége. A minta szempontjából
         // semmi jelentősége, csak a megjelenítést segíti
         // szemléletesebbé tenni.
@@ -21,29 +21,29 @@ namespace DesPattCode.Composite
         // Megjeleníti a tartalmazott alakzatokat
         // A minta szempontjából a lényeg két sor: minden
         // tartalmazott graphics objektumra meghívja a Draw()-t
-        // A többi kód csak azt szolgálja, hogy a panelnek 
+        // A többi kód csak azt szolgálja, hogy a panelnek
         // legyen "kerete", illetve annak függvényében, hogy
-        // milyen mélyen van beágyazva más panelokba 
-        // (indentLevel), annyival bentebb húzva kezdi a 
+        // milyen mélyen van beágyazva más panelokba
+        // (indentLevel), annyival bentebb húzva kezdi a
         // tartalmazott elemek megjelenítését (így szemléletesebb
         // a megjelenítés).
         public void Draw()
         {
             try
             {
-                
+
                 writeIndented("Panel");
                 indentLevel++;
 
                 foreach (var g in graphics)
                 {
                     // Ez nem szép, a demónkban "megteszi"
-                    if (!(g is Panel)) 
+                    if (!(g is Panel))
                         writeIndent();
 
                     g.Draw();
                 }
-                
+
             }
             finally
             {

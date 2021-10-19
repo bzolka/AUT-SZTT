@@ -22,7 +22,7 @@ namespace DesPattCode.Intro
         }
 
         byte[] readData() { /* adat olvasása hálózatról  */   }
-        
+
         byte[] compressData(byte[] data) { /* adattömörítés zip algoritmussal */  }
 
         void  processCompressedData(byte[] data) { /* tömörített adat feldolgozása */; }

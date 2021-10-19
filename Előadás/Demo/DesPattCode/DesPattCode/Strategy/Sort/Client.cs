@@ -46,6 +46,6 @@ namespace DesPattCode.Strategy.Sort
         }
     }
 
-    
+
 
 }

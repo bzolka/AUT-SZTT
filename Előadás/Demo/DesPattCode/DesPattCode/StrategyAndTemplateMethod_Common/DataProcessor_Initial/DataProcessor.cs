@@ -4,18 +4,18 @@ using System.Text;
 
 namespace DesPattCode.Initial
 {
-    // Kiinduló megoldás, mely közös a Template Method és Strategy tervesési 
+    // Kiinduló megoldás, mely közös a Template Method és Strategy tervesési
     // mintákra.
-    // Csak zip algoritmust támogat, és csak billentyűmegnyomással lehet megszakítani 
-    // a folyamatot. 
+    // Csak zip algoritmust támogat, és csak billentyűmegnyomással lehet megszakítani
+    // a folyamatot.
     // Alapelve (a Run függvény az érdekes):
     // * A Run műveletben egy ciklusban olvassa az adatokat, és a beolvasott adatokat
     //   a compressData műveletel zip algoritmussal tömöríti, majd a processCompressedData
     //   hívással folytatódik a feldolgozás.
-    // * T.f.h. a tömörítés legelején szükség van egy kezdeti inicializáló a végén pedig 
-    //   egy lezáró/takarító lépésre (a gyakorlatban ez szinte mindig így van). Ezeket az 
+    // * T.f.h. a tömörítés legelején szükség van egy kezdeti inicializáló a végén pedig
+    //   egy lezáró/takarító lépésre (a gyakorlatban ez szinte mindig így van). Ezeket az
     //   initZip és closeZip függvények valósítják meg.
-    // * Minden feldolgozási iterációban megnézzük, hogy a felhasználó megszakította-e a 
+    // * Minden feldolgozási iterációban megnézzük, hogy a felhasználó megszakította-e a
     //   folyamatot (isCancelled művelet), és ha igen, kilépünk a ciklusból.
 
     class DataProcessor
@@ -28,7 +28,7 @@ namespace DesPattCode.Initial
             // Ebben tároljuk a beolvasott, tömörítendő adatokat
             byte[] inputData;
             // T.f.h szükség van zip inicializálásra
-            initZip(); 
+            initZip();
             try
             {
                 while ((inputData = readData()) != null)
@@ -47,7 +47,7 @@ namespace DesPattCode.Initial
                 // T.f.h szükség van zip lezárására (pl. zip fájl lezárása)
                 closeZip();
             }
-       
+
         }
 
         // Beolvassa az adatok következő halmazát egy byte[]-be
@@ -64,7 +64,7 @@ namespace DesPattCode.Initial
             new Random().NextBytes(data);
             return data;
         }
-        
+
         byte[] compressData(byte[] data)
         {
             Console.WriteLine("Compressing data via Zip ...");
@@ -74,7 +74,7 @@ namespace DesPattCode.Initial
 
         void  processCompressedData(byte[] data)
         {
-            // Feladatfüggő, mit jelent a további feldolgozás (pl. 
+            // Feladatfüggő, mit jelent a további feldolgozás (pl.
             // írhatnánk netre, fájlba, stb.,), itt nem valósítjuk meg.
             Console.WriteLine("Processing compressed data...");
         }

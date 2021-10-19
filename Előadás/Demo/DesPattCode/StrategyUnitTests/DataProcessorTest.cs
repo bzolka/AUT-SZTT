@@ -5,9 +5,9 @@ namespace StrategyUnitTests
 {
 
     // Pár egyszerű tesztet végez a DataProcessor-ra vonatkozóan.
-    // A DataProcessor akkor lenne igazán unit tesztelhető, ha a 
+    // A DataProcessor akkor lenne igazán unit tesztelhető, ha a
     // readData művelete is ki lenne szervezve egy stratégiába.
-    // Mivel ez nem tehető meg jelenleg, a tesztjeink lassúak, meg 
+    // Mivel ez nem tehető meg jelenleg, a tesztjeink lassúak, meg
     // kell várni a teljes feldolgozást.
     [TestClass]
     public class DataProcessorTest
@@ -21,7 +21,7 @@ namespace StrategyUnitTests
             var compressionStrat = new CallCounterCompressionStrategy();
             var processor = new DataProcessor(
                compressionStrat,
-               new NonCancellableCancellationStrategy() 
+               new NonCancellableCancellationStrategy()
                );
 
             // Futtatás

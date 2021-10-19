@@ -27,7 +27,7 @@ namespace DesPattCode.Composite
             panel1.Add(new Text());
 
             // Egy másik panel, alakzatokat veszünk fel
-            // bele, és ebbe vesszük fel az előző panelt 
+            // bele, és ebbe vesszük fel az előző panelt
             // is !!!!
             var panel2 = new Panel();
             panel2.Add(new Text());

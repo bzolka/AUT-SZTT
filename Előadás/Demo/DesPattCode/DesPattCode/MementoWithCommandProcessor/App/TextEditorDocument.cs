@@ -16,7 +16,7 @@ namespace DesPattCode.MementoWithCommandProcessor.App
         // Az aktuális kijelölés hossza (ha 0, nincs szöveg kijelölve)
         int selectionLenght;
 
-        // Csak kezdeti inicializálásra. (Nem engedjük használni, ha a 
+        // Csak kezdeti inicializálásra. (Nem engedjük használni, ha a
         // a selectionStartIndex és a selectionLenght nem nulla)
         public TextDocument(string initalText = "")
         {
@@ -29,7 +29,7 @@ namespace DesPattCode.MementoWithCommandProcessor.App
         // Az aktuálisan kijelölt szöveget lecsréli a paraméterben megadottra.
         public void SetSelectedText(string textForSelection)
         {
-            this.text = 
+            this.text =
                 text.Remove(selectionStartIndex,
                          Math.Min(selectionLenght, text.Length - selectionStartIndex))
                     .Insert(selectionStartIndex, textForSelection);
@@ -41,7 +41,7 @@ namespace DesPattCode.MementoWithCommandProcessor.App
             return text.Substring(selectionStartIndex, selectionLenght);
         }
 
-        // Megadhatjuk, hogy mettől és milyen hosszan legyen kijelölve 
+        // Megadhatjuk, hogy mettől és milyen hosszan legyen kijelölve
         // a szöveg (egy "éles" alkalmazásban a felhasználó ez az egérrel
         // tudja megadni, egérkezeléssel mi nem foglalkozunk).
         public void SetSelection(int startIndex, int len)
@@ -90,21 +90,21 @@ namespace DesPattCode.MementoWithCommandProcessor.App
 
         #region Memento műveletek
 
-        // Előállít és visszaad egy memento objektumot, mely a dokumentum aktuális 
-        // teljes állapotát tartalmazza a visszaállításhoz. 
+        // Előállít és visszaad egy memento objektumot, mely a dokumentum aktuális
+        // teljes állapotát tartalmazza a visszaállításhoz.
         public TextDocMemento CreateMemento()
         {
             return new TextDocMemento(text,
                     selectionStartIndex, selectionLenght);
         }
 
-        // Visszaállítja a dokumentum állapotát a memento paraméter 
+        // Visszaállítja a dokumentum állapotát a memento paraméter
         // alapján. Kiolvassa a memento objektumból a dokumentum
         // korábbi állapotát és erre beállítja az aktuállis állapotot
         // (a tagváltozók jelenlegi értékét állítja).
         public void RestoreFromMemento(TextDocMemento memento)
         {
-            // A GetState egy 3-as tuple-t ad vissza, ezt egyből 
+            // A GetState egy 3-as tuple-t ad vissza, ezt egyből
             // "szétbontjuk" (deconstruct), a három tagváltozóba
             // kerülnek az értékek. A szintaktika lényegtelen számunkra.
             (text, selectionStartIndex, selectionLenght) = memento.GetState();

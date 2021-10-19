@@ -47,14 +47,14 @@ namespace DesPattCode.TemplateMethod
             Thread.Sleep(100);
             return data;
         }
-        
+
         void  processCompressedData(byte[] data)
         {
             Console.WriteLine("Processing compressed data...");
         }
 
         // Egyes tömörítő algortimusoknál sükség lehet kezdeti inizializáló lépésre
-        protected virtual void InitCompression() { } 
+        protected virtual void InitCompression() { }
         protected abstract byte[] CompressData(byte[] data);
         protected virtual void CloseCompression() { }
 

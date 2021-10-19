@@ -11,8 +11,8 @@ namespace DesPattCode.ObserverDocView
             ExcelDocument doc = new ExcelDocument();
 
             // Létrehozzuk a két nézetet, konstruktorban átadva a dokumentumot
-            // A nézetek az ősosztályuk (ViewBase) konstruktorában be is regisztrálnak a 
-            // a dokumentumukhoz (Attach hívás). 
+            // A nézetek az ősosztályuk (ViewBase) konstruktorában be is regisztrálnak a
+            // a dokumentumukhoz (Attach hívás).
             var tableView = new TableView(doc);
             var columnChartView = new ColumnChartView(doc);
 

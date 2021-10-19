@@ -17,7 +17,7 @@ namespace DesPattCode.Command.App
             app.InitMenu();
 
             // Szimuláljunk néhány felhasználói menü kattintást
-            // Ezek a megfelelő, adott menüelemekhez beregisztált 
+            // Ezek a megfelelő, adott menüelemekhez beregisztált
             // parancsot futtaják.
             app.SimulateUserMenuClicks();
         }

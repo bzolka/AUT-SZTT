@@ -35,8 +35,8 @@ namespace DesPattCode.ObserverDocView
             }
         }
 
-        // Bekéri a felhasználótól a két koordinátát, majd az új értéket, 
-        // és megváltozatatja a dokumentum tartalmát. Azt szimulálja, mintha egy 
+        // Bekéri a felhasználótól a két koordinátát, majd az új értéket,
+        // és megváltozatatja a dokumentum tartalmát. Azt szimulálja, mintha egy
         // valódi táblázatkezelőben a cellában átírna a felhasználó egy értéket.
         public void SimulateUserChange()
         {

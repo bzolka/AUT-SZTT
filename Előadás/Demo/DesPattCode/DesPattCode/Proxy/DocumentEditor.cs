@@ -4,9 +4,9 @@ using System.Text;
 
 namespace DesPattCode.Proxy
 {
-    // A dokumentumszerkesztő osztálya, tárolja a dokumentum 
+    // A dokumentumszerkesztő osztálya, tárolja a dokumentum
     // objektumait, gondoskodik kirajzolásukról, betöltésükről, stb.
-    // A graphics listájában nem Image, hanem ImageProxy objektumok 
+    // A graphics listájában nem Image, hanem ImageProxy objektumok
     // vannak, melyek az Image objektumokat igény szerint töltik be.
     class DocumentEditor
     {
@@ -18,10 +18,10 @@ namespace DesPattCode.Proxy
 
         public void Load()
         {
-            // Fájlból betöltés helyett fixen létrehozzuk 
+            // Fájlból betöltés helyett fixen létrehozzuk
             // a grafikus alakzatokat.
 
-            // Az Image helyett egy ImageProxy-t veszünk 
+            // Az Image helyett egy ImageProxy-t veszünk
             // a listába!
             ImageProxy imageProxy;
             imageProxy = new ImageProxy();
@@ -43,7 +43,7 @@ namespace DesPattCode.Proxy
 
         public int GetPageCount()
         {
-            // Össz magasság. 
+            // Össz magasság.
             int heightSum = 0;
 
             // T.f.h a képek egymás alatt vannak, köztük
@@ -66,7 +66,7 @@ namespace DesPattCode.Proxy
 
         public void DrawFirstPage()
         {
-            // Csak azokat rajzoljuk ki, melyek legalább részben kiférnek 
+            // Csak azokat rajzoljuk ki, melyek legalább részben kiférnek
             // egymás alá
             int height = 0;
             foreach (var g in graphics)
