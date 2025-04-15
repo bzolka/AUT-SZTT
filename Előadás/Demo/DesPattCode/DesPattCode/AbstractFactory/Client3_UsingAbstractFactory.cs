@@ -28,9 +28,9 @@ namespace DesPattCode.AbstractFactory
         // ...
         // Factory interfész, ezt használja majd a kliens a GUI elemek
         // létrehozásához.
-        private GUIFactory factory;
+        private IGUIFactory factory;
 
-        public void SetFactory(GUIFactory fy)
+        public void SetFactory(IGUIFactory fy)
         {
             factory = fy;
         }
@@ -60,7 +60,7 @@ namespace DesPattCode.AbstractFactory
         static void Main2(string[] args)
         {
             Client3_UsingAbstractFactory client = new Client3_UsingAbstractFactory();
-            GUIFactory factory;
+            IGUIFactory factory;
 
             // Konfiguráljuk fel a klienst egy adott factory objektummal. A kliens
             // ezt fogja használni az GUI objektumainak létrehozásához.
