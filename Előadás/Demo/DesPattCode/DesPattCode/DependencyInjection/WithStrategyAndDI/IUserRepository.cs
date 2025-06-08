@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DesPattCode.DepencencyInjection.WithStrategy
+namespace DesPattCode.DependencyInjection.WithStrategyAndDI
 {
     // UserRespository interfész
     interface IUserRepository

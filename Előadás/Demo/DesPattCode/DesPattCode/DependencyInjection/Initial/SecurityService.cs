@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DesPattCode.DepencencyInjection.Initial
+namespace DesPattCode.DependencyInjection.Initial
 {
     // Felhasználókhoz kapcsolódó biztonsági szolgáltatásokat biztosít,
     // mint például jelszó megváltoztatása, jelszó ellenőrzés beléptetéskor, stb.

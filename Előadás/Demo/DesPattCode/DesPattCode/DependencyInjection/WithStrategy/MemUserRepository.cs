@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DesPattCode.DepencencyInjection.WithStrategyAndDI
+namespace DesPattCode.DependencyInjection.WithStrategy
 {
     // A felhasználók adatainak memória alapú perzisztálására szolgál.
     // Gyors, unit teszteléshez

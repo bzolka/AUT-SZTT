@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DesPattCode.DepencencyInjection.WithStrategy
+namespace DesPattCode.DependencyInjection.Initial
 {
     // A felhasználók adatainak adatbázis alapú perzisztálására szolgál.
-    class DbUserRepository: IUserRepository
+    class UserRepository
     {
         public string GetUserPassword(int userId)
         {
@@ -23,5 +23,7 @@ namespace DesPattCode.DepencencyInjection.WithStrategy
 
         // További műveletek felhasználók tárolására, módosítására, törlésére
         // ...
+
+
     }
 }

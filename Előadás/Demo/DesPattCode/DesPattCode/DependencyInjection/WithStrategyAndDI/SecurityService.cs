@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DesPattCode.DepencencyInjection.WithStrategyAndDI
+namespace DesPattCode.DependencyInjection.WithStrategyAndDI
 {
     // Végső megoldás.
     // Interfészként hivatkozik a UserRepository implementációra,

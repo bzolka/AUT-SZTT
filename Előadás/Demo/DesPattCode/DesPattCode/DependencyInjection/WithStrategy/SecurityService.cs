@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DesPattCode.DepencencyInjection.WithStrategy
+namespace DesPattCode.DependencyInjection.WithStrategy
 {
     // Az eredeti (Initial) SecurityService továbbfejlesztése.
     // Interfészként hivatkozik a UserRepository implementációra:
