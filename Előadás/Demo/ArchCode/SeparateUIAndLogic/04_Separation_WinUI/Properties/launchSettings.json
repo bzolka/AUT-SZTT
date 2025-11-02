@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "SeparateUIAndLogic (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "SeparateUIAndLogic (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
