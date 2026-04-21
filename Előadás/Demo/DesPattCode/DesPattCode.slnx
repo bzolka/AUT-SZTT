@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="DesPattCode/DesPattCode.csproj" />
+  <Project Path="StrategyUnitTests/StrategyUnitTests.csproj" />
+</Solution>
