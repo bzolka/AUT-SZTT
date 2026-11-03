@@ -10,7 +10,7 @@ namespace DesPattCode.AbstractFactory
 // Mindegyik művelete egy a művelet nevének megfelelő vezérlőt gyárt.
 // Mindegyik művelet visszatérési típusa az edott vezérlő
 // interfész/közös ős típusa (vagyis független a témától!).
-interface GUIFactory
+interface IGUIFactory
 {
     Window CreateWindow();
     Button CreateButton();
@@ -20,7 +20,7 @@ interface GUIFactory
     // A GUIFactory Win10 implementációja, Win10 témájú felületelemeket gyárt.
     // Minden művelete egy a művelet nevének megfelelő típusú, az osztály
     // nevének megfelelő (jelen esetben Win10) témájú felületelemet gyárt.
-    class Win10GUIFactory : GUIFactory
+    class Win10GUIFactory : IGUIFactory
     {
         public Window CreateWindow() { return new Win10Window(); }
         public Button CreateButton() { return new Win10Button(); }
@@ -30,7 +30,7 @@ interface GUIFactory
     // A GUIFactory OSX implementációja, OSX témájú felületelemeket gyárt.
     // Minden művelete egy a művelet nevének megfelelő típusú, az osztály
     // nevének megfelelő (jelen esetben OSX) témájú felületelemet gyárt.
-    class OSXGUIFactory : GUIFactory
+    class OSXGUIFactory : IGUIFactory
     {
         public Window CreateWindow() { return new OSXWindow(); }
         public Button CreateButton() { return new OSXButton(); }
